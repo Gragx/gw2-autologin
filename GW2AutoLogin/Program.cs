@@ -36,7 +36,7 @@ namespace GW2AutoLogin {
 
         private static void runAutoLogin(Process process, Config config, KeyValuePair<string, string> credentials) {
             process.Start();
-            System.Threading.Thread.Sleep(10 * 1000);
+            System.Threading.Thread.Sleep(7 * 1000);
             InputSimulator s = new InputSimulator();
 
             s.Keyboard.TextEntry(credentials.Key);
@@ -45,6 +45,10 @@ namespace GW2AutoLogin {
 
             s.Keyboard.TextEntry(credentials.Value);
 
+            s.Keyboard.KeyPress(VirtualKeyCode.RETURN);
+
+            // skip auto login timer
+            System.Threading.Thread.Sleep(2 * 1000);
             s.Keyboard.KeyPress(VirtualKeyCode.RETURN);
 
             System.Threading.Thread.Sleep(10 * 1000);
