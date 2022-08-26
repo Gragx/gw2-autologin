@@ -1,6 +1,7 @@
-E:\Games\Guild Wars 2
---Set email pw line by line --
-musthaqaadhil@gmail.com
-123123
-musthaqaadhil@gmail.com
-23213
+--specify the games install directory--
+installDir=E:\Games\Guild Wars 2
+--define the time in ms to wait for logging in a character--
+waitTime=10000
+--Add accounts below in the format "account=<email> <password>"--
+account=account1@mail.com superSafePass
+account=account2@mail.com 1234
