@@ -3,9 +3,7 @@ Guild Wars 2 auto login for daily rewards
 
 Download the Latest Build from release
 
-use config.txt to choose the gw2.exe directory location
-
-attach email and pw 1 by 1 on new lines as the example login details
+Use config.txt to configure the games installation directory, your accounts and waiting times.
 
 Then Run the GW2AutoLogin.exe file..
 
